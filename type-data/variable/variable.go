@@ -8,6 +8,7 @@ func main() {
 	city := "Pati"
 	year := 2002
 	const pi = 3.14
+	age = 23
 
 	fmt.Println("Name:", name)
 	fmt.Println("Age:", age)
