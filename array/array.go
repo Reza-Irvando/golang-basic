@@ -38,4 +38,20 @@ func main() {
 	fmt.Println("Slice [2:]: ", s3)
 	s4:= full[1:4]
 	fmt.Println("Slice [1:4]: ", s4)
+
+	// slice functions
+	slice1 := make([]int, 3, 5)
+	fmt.Println("Original slice: ", slice1)
+	fmt.Println("Length of the slice: ", len(slice1))
+	fmt.Println("Capacity of the slice: ", cap(slice1))
+	slice1 = append(slice1, 60, 70)
+	slice1[0] = 10
+	fmt.Println("Appended slice1: ", slice1)
+	slice2 := make([]int, 4)
+	fmt.Println("Created slice2: ", slice2)
+	fmt.Println("Length of the created slice2: ", len(slice2))
+	fmt.Println("Capacity of the created slice2: ", cap(slice2))
+	slice3 := copy(slice2, slice1)
+	fmt.Println("Copied slice2: ", slice2)
+	fmt.Println("Number of elements copied: ", slice3)
 }
