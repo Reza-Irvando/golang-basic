@@ -54,4 +54,11 @@ func main() {
 	slice3 := copy(slice2, slice1)
 	fmt.Println("Copied slice2: ", slice2)
 	fmt.Println("Number of elements copied: ", slice3)
+
+	// slice 4 = slice 5 then change slice 5
+	slice4 := []int{1, 2, 3, 4, 5}
+	slice5 := slice4[2:]
+	slice5[2] = 100
+	fmt.Println("slice4 after modifying slice5: ", slice4)
+	fmt.Println("slice5 after modification: ", slice5)
 }
